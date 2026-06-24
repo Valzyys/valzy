@@ -1,6 +1,6 @@
 export const socials = {
-	github: "https://github.com/divyanshudhruv",
-	linkedin: "https://linkedin.com/in/divyanshudhruv",
-	x: "https://x.com/divyanshudhruv",
-	email: "mailto:divyanshudhruv@proton.me",
+	github: "https://github.com/JKT48Connect",
+	linkedin: "#",
+	x: "https://x.com/valzyys",
+	email: "mailto:jkt48connect@gmail.com",
 } as const;
