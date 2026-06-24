@@ -36,6 +36,8 @@ export const stacksData: StackCategory[] = [
 				url: "https://arduino-ide.en.softonic.com/",
 				label: "INO",
 			},
+			{ url: "https://kotlinlang.org", label: "Kotlin" },
+			{ url: "https://www.lua.org", label: "Lua" },
 		],
 	},
 	{
@@ -51,6 +53,7 @@ export const stacksData: StackCategory[] = [
 			{ url: "https://nextjs.org", label: "Next.js" },
 
 			{ url: "https://reactnative.dev", label: "React Native" },
+			{ url: "https://expo.dev", label: "Expo" },
 			{ url: "https://expressjs.com", label: "Express" },
 			{ url: "https://elysiajs.com", label: "Elysia" },
 			{ url: "https://hono.dev", label: "Hono" },
@@ -64,6 +67,9 @@ export const stacksData: StackCategory[] = [
 			{ url: "https://once-ui.com", label: "Once UI" },
 			{ url: "https://ui.shadcn.com", label: "shadcn/ui" },
 			{ url: "https://turbo.build", label: "Turborepo" },
+			{ url: "https://vitejs.dev", label: "Vite" },
+			{ url: "https://zod.dev", label: "Zod" },
+			{ url: "https://jwt.io", label: "JWT" },
 		],
 	},
 	{
@@ -79,6 +85,9 @@ export const stacksData: StackCategory[] = [
 			{ url: "https://supermemory.ai", label: "Supermemory AI" },
 			{ url: "https://www.sqlite.org", label: "SQLite" },
 			{ url: "https://orm.drizzle.team", label: "Drizzle" },
+			{ url: "https://www.cockroachlabs.com", label: "CockroachDB" },
+			{ url: "https://developers.cloudflare.com/d1/", label: "Cloudflare D1" },
+			{ url: "https://developers.cloudflare.com/kv/", label: "Cloudflare KV" },
 		],
 	},
 	{
@@ -94,6 +103,12 @@ export const stacksData: StackCategory[] = [
 			{ url: "https://opentui.com", label: "OpenTUI" },
 			{ url: "https://evlog.dev", label: "Evlog" },
 			{ url: "https://git-scm.com", label: "Git" },
+			{ url: "https://ffmpeg.org", label: "FFmpeg" },
+			{
+				url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+				label: "WebSocket",
+			},
+			{ url: "https://eslint.org", label: "ESLint" },
 		],
 	},
 	{
@@ -113,6 +128,10 @@ export const stacksData: StackCategory[] = [
 				url: "https://learn.microsoft.com/en-us/powershell/",
 				label: "PowerShell",
 			},
+			{ url: "https://workers.cloudflare.com", label: "Cloudflare Workers" },
+			{ url: "https://pages.cloudflare.com", label: "Cloudflare Pages" },
+			{ url: "https://www.cloudflare.com/products/r2/", label: "Cloudflare R2" },
+			{ url: "https://vercel.com", label: "Vercel" },
 		],
 	},
 ];
