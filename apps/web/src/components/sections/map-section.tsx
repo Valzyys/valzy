@@ -1,23 +1,20 @@
 import { Flex } from "@once-ui-system/core";
 import type { TCountryCode } from "countries-list";
 import { DottedMap, type Marker } from "@/components/dotted-map";
-
 type MyMarker = Marker & {
 	overlay: {
 		countryCode: TCountryCode;
 		label: string;
 	};
 };
-
 const markers: MyMarker[] = [
 	{
-		lat: 22.2728,
-		lng: 73.1984,
+		lat: -6.9667,
+		lng: 110.4167,
 		size: 1,
-		overlay: { countryCode: "IN", label: "Vadodara" },
+		overlay: { countryCode: "ID", label: "Semarang" },
 	},
 ];
-
 export default function MapSection({ id }: { id: string }) {
 	return (
 		<Flex id={id} fillWidth fitHeight>
