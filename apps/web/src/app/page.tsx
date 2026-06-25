@@ -64,7 +64,7 @@ export default function Home() {
         </Column>
       </Flex>
       <Flex fillWidth>
-        <FluidGradientText text="divyanshudhruv" />
+        <FluidGradientText text="valzynathaniel" />
       </Flex>
     </Flex>
 	);
