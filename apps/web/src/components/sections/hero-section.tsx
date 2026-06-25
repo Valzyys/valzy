@@ -1,5 +1,4 @@
 "use client";
-
 import { Flex, Media, Text } from "@once-ui-system/core";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
@@ -7,7 +6,6 @@ import { Inline } from "@/components/inline";
 import PremiumButton from "@/components/premium-button";
 import { pfpOverlays } from "@/resources/pfp-overlays";
 import { socials } from "@/resources/socials";
-
 const WavePlayer = dynamic(
   () =>
     import("@/components/waves-cn/wave-player").then((m) => ({
@@ -15,14 +13,11 @@ const WavePlayer = dynamic(
     })),
   { ssr: false },
 );
-
 const pfpDurations = pfpOverlays.map(() => 3000);
-
 export default function HeroSection({ id }: { id: string }) {
   const [pfpIndex, setPfpIndex] = useState(0);
   const [pfp, setPfp] = useState(pfpOverlays[0]);
   const [pfpFade, setPfpFade] = useState(true);
-
   useEffect(() => {
     const duration = pfpDurations[pfpIndex] ?? 3000;
     const timeout = setTimeout(() => {
@@ -35,7 +30,6 @@ export default function HeroSection({ id }: { id: string }) {
     }, duration * 2);
     return () => clearTimeout(timeout);
   }, [pfpIndex]);
-
   return (
     <Flex
       id={id}
@@ -74,17 +68,18 @@ export default function HeroSection({ id }: { id: string }) {
       </Flex>
       <Inline className="font-default font-display font-s text-foreground wrap-break-word">
         <b>
-          Hi I'm Divyanshu Dhruv — upcoming intern at{" "}
+          Hi I'm Valzy — developer building{" "}
           <span className="text-muted-foreground">
-            Once UI. Previously at Next Bench.
+            JKT48Connect. Fan platform & API ecosystem for JKT48.
           </span>
         </b>
       </Inline>
       <Text className="font-body font-normal text-md text-muted-foreground wrap-break-word">
-        Hi lol, I am an 18 y/o developer who is passionate about building products that
-        solve real-world problems. I enjoy working on end-to-end projects, but I
-        thrive when I can get my hands dirty with both code and pixels. I make
-        music too.
+        Hi, I'm a developer passionate about building products that solve
+        real-world problems for fan communities. I work across the full stack —
+        Cloudflare Workers, Next.js, Node.js, and Python — connecting Discord,
+        Telegram, Twitter/X, and WhatsApp into one platform. I'm also a JKT48
+        fan, especially of Catherina Vallencia.
       </Text>
       <Flex
         fillWidth
