@@ -32,7 +32,7 @@ export const experiences: Experience[] = [
 		url: "https://docs.jkt48connect.com",
 		startDate: "Jun 24",
 		endDate: "Now",
-		invert: true,
+		invert: false,
 	},
 ];
 
