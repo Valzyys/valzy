@@ -2,9 +2,7 @@ import { Grid, Text } from "@once-ui-system/core";
 import * as React from "react";
 
 const credits: [string, string][] = [
-	["Crafted by", "Divyanshu Dhruv"],
-	["Source code", "Github"],
-	["Inspired by", "once-ui.com"],
+	["Crafted by", "Valzy Nathaniel"],
 	["", "ui.shadcn.com"],
 	["", "tailwindcss.com"],
 	["", "bklit.ui"],
