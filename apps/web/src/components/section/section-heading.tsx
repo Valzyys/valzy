@@ -1,6 +1,6 @@
 import { Flex, Text } from "@once-ui-system/core";
 import type { ReactNode } from "react";
-import { Inline } from "@/components/inline";
+import { SplitHeading } from "@/components/motion/split-heading";
 
 type SectionHeadingProps = {
 	before: string;
@@ -9,14 +9,17 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ before, highlight }: SectionHeadingProps) {
 	return (
-		<Inline className="font-default font-display font-s text-foreground">
+		<SplitHeading
+			as="h2"
+			className="m-0 font-default font-display font-s text-foreground"
+		>
 			<b>
 				{before}{" "}
 				{highlight && (
 					<span className="text-muted-foreground">{highlight}</span>
 				)}
 			</b>
-		</Inline>
+		</SplitHeading>
 	);
 }
 

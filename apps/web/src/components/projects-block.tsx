@@ -9,6 +9,10 @@ export interface Projects {
   liveUrl?: string;
   date: Date;
   invert?: boolean;
+  /** Short category labels shown on the projects index. */
+  tags?: string[];
+  stack?: string[];
+  highlights?: string[];
 }
 
 export interface ProjectsBlockProps {

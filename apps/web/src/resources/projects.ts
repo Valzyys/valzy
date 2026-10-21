@@ -19,6 +19,13 @@ export const projectsData: Projects[] = [
 		liveUrl: "https://docs.jkt48connect.com",
 		invert: true,
 		date: new Date("2024-06-15"),
+		tags: ["API", "Edge"],
+		stack: ["Cloudflare Workers", "Hono", "Cloudflare KV", "D1", "TypeScript"],
+		highlights: [
+			"Members, theater schedules, live streams and news behind one consistent REST surface.",
+			"Runs on Cloudflare's edge for low-latency responses across Indonesia.",
+			"Powers the app, the Discord bot and third-party fan projects.",
+		],
 	},
 	{
 		title: "GiStream",
@@ -28,6 +35,13 @@ export const projectsData: Projects[] = [
 			"https://i.pinimg.com/originals/ff/04/40/ff0440051eca64114ced7efe3456f746.gif",
 		liveUrl: "https://gstreamlive.com",
 		date: new Date("2024-09-10"),
+		tags: ["Streaming", "Web"],
+		stack: ["Next.js", "Cloudflare R2", "FFmpeg", "WebSocket"],
+		highlights: [
+			"Live theater shows streamed at a price fans can actually afford.",
+			"Low-latency playback with a lightweight, mobile-friendly player.",
+			"Built to stay up when a popular show pulls in a crowd.",
+		],
 	},
 	{
 		title: "JKT48Connect Pay",
@@ -38,6 +52,13 @@ export const projectsData: Projects[] = [
 		liveUrl: "https://pay.jkt48connect.com",
 		invert: true,
 		date: new Date("2026-05-01"),
+		tags: ["Payments", "Edge"],
+		stack: ["Cloudflare Workers", "Durable Objects", "QRIS", "Webhooks"],
+		highlights: [
+			"Automated QRIS payments with real-time status polling.",
+			"Multi-tenant billing so several products share one gateway.",
+			"Webhook-driven subscription management for the whole ecosystem.",
+		],
 	},
 	{
 		title: "JKT48Connect App",
@@ -48,6 +69,13 @@ export const projectsData: Projects[] = [
 		repoUrl: "https://github.com/JKT48Connect/JKT48Connect-APP",
 		liveUrl: "https://github.com/JKT48Connect/JKT48Connect-APP/releases",
 		date: new Date("2025-03-01"),
+		tags: ["Mobile", "App"],
+		stack: ["React Native", "Expo", "TypeScript"],
+		highlights: [
+			"Schedules, news, member tracking and stream history in one place.",
+			"Direct theater live streaming from inside the app.",
+			"Open source, with releases published on GitHub.",
+		],
 	},
 	{
 		title: "@jkt48/core",
@@ -59,6 +87,13 @@ export const projectsData: Projects[] = [
 		liveUrl: "https://www.npmjs.com/package/@jkt48/core",
 		invert: true,
 		date: new Date("2025-08-20"),
+		tags: ["Open source", "Library"],
+		stack: ["Node.js", "TypeScript", "npm"],
+		highlights: [
+			"The full JKT48Connect API as a typed npm package.",
+			"Zero-setup access to members, schedules, lives and news.",
+			"Published openly so anyone can build their own fan tools.",
+		],
 	},
 	{
 		title: "JKT48Connect Discord Bot",
@@ -68,5 +103,12 @@ export const projectsData: Projects[] = [
 			"https://i.pinimg.com/originals/ac/a8/4c/aca84c26b527ba422235ec69be67f8a8.gif",
 		liveUrl: "https://top.gg/bot/1305141693477027891",
 		date: new Date("2024-11-20"),
+		tags: ["Bot", "Community"],
+		stack: ["Node.js", "Discord.js", "WebSocket"],
+		highlights: [
+			"Real-time live notifications from IDN Live and Showroom.",
+			"JKT48 news and event updates delivered straight to servers.",
+			"Listed on top.gg for any fan community to invite.",
+		],
 	},
 ];
