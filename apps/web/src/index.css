@@ -1,3 +1,30 @@
 @import "@homepage/ui/globals.css";
 @import "@once-ui-system/core/css/tokens.css";
 @import "@once-ui-system/core/css/styles.css";
+
+@theme inline {
+	--font-pixel: var(--font-pixel);
+	--font-mono:
+		var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.intro-seen [data-intro] {
+	display: none;
+}
+
+::selection {
+	background: var(--color-orange-500);
+	color: white;
+}
+
+[data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+/* Once UI colours every <a> outside a cascade layer, which beats Tailwind utilities.
+   Links tagged `.ink` fall back to their utility classes instead. */
+a:not(.button).ink,
+a:not(.button).ink:hover {
+	color: revert-layer;
+	text-decoration: revert-layer;
+}
